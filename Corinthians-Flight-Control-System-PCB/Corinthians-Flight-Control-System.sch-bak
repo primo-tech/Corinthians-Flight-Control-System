@@ -537,8 +537,6 @@ Wire Notes Line
 Wire Notes Line
 	5900 550  5900 1850
 Wire Notes Line
-	5900 1850 4450 1850
-Wire Notes Line
 	4450 1850 4450 550 
 $Comp
 L Connector_Generic_MountingPin:Conn_01x10_MountingPin J2
@@ -557,8 +555,6 @@ Wire Notes Line
 	5250 4200 3050 4200
 Wire Notes Line
 	5250 2200 5250 4200
-Wire Notes Line
-	3050 2200 5250 2200
 NoConn ~ 3450 3550
 NoConn ~ 3450 2950
 $Comp
@@ -979,7 +975,7 @@ U 1 1 5FAAE368
 P 2100 1300
 F 0 "C11" H 2192 1338 50  0000 L CNN
 F 1 "10uF" H 2192 1255 39  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2100 1300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2100 1300 50  0001 C CNN
 F 3 "~" H 2100 1300 50  0001 C CNN
 	1    2100 1300
 	1    0    0    -1  
@@ -990,7 +986,7 @@ U 1 1 5FAABBFD
 P 1450 1300
 F 0 "C10" H 1542 1338 50  0000 L CNN
 F 1 "10uF" H 1542 1255 39  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1450 1300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1450 1300 50  0001 C CNN
 F 3 "~" H 1450 1300 50  0001 C CNN
 	1    1450 1300
 	1    0    0    -1  
@@ -2072,10 +2068,10 @@ Wire Wire Line
 	8550 3400 8500 3400
 Connection ~ 8350 4150
 $Comp
-L Device:R_Small R14
+L Device:R_Small R10
 U 1 1 5FC8FB39
 P 8650 4350
-F 0 "R14" V 8454 4350 50  0000 C CNN
+F 0 "R10" V 8454 4350 50  0000 C CNN
 F 1 "...." V 8545 4350 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 8650 4350 50  0001 C CNN
 F 3 "~" H 8650 4350 50  0001 C CNN
@@ -2316,29 +2312,18 @@ F 3 "~" H 5150 1300 50  0001 C CNN
 	1    5150 1300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Small R15
-U 1 1 601F7C14
-P 4600 900
-F 0 "R15" V 4796 900 50  0000 C CNN
-F 1 "10K" V 4705 900 39  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 4600 900 50  0001 C CNN
-F 3 "~" H 4600 900 50  0001 C CNN
-	1    4600 900 
-	1    0    0    -1  
-$EndComp
 Text GLabel 5550 1300 2    50   Input ~ 0
 NRST
 $Comp
 L power:GND #PWR0153
 U 1 1 6025A3C2
-P 4650 700
-F 0 "#PWR0153" H 4650 450 50  0001 C CNN
-F 1 "GND" H 4655 527 50  0000 C CNN
-F 2 "" H 4650 700 50  0001 C CNN
-F 3 "" H 4650 700 50  0001 C CNN
-	1    4650 700 
-	0    -1   -1   0   
+P 4600 800
+F 0 "#PWR0153" H 4600 550 50  0001 C CNN
+F 1 "GND" H 4605 627 50  0000 C CNN
+F 2 "" H 4600 800 50  0001 C CNN
+F 3 "" H 4600 800 50  0001 C CNN
+	1    4600 800 
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	8850 1200 8850 1150
@@ -2365,10 +2350,10 @@ F 3 "" H 8150 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R16
+L Device:R_Small R11
 U 1 1 60310E55
 P 8150 950
-F 0 "R16" V 7954 950 50  0000 C CNN
+F 0 "R11" V 7954 950 50  0000 C CNN
 F 1 "470" V 8045 950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 8150 950 50  0001 C CNN
 F 3 "~" H 8150 950 50  0001 C CNN
@@ -2395,15 +2380,11 @@ NoConn ~ 10500 6000
 Wire Wire Line
 	5550 1300 5450 1300
 Wire Wire Line
-	4650 700  4600 700 
-Wire Wire Line
-	4600 700  4600 800 
-Wire Wire Line
 	4950 950  4950 900 
 Wire Wire Line
-	4850 1000 4600 1000
+	4850 1050 4600 1050
 Wire Wire Line
-	4850 1300 4850 1000
+	4850 1300 4850 1050
 Wire Wire Line
 	5700 950  5700 1050
 $Comp
@@ -2420,12 +2401,12 @@ $EndComp
 $Comp
 L power:GND #PWR0177
 U 1 1 605B4224
-P 4650 1250
-F 0 "#PWR0177" H 4650 1000 50  0001 C CNN
-F 1 "GND" H 4655 1077 50  0000 C CNN
-F 2 "" H 4650 1250 50  0001 C CNN
-F 3 "" H 4650 1250 50  0001 C CNN
-	1    4650 1250
+P 4650 1300
+F 0 "#PWR0177" H 4650 1050 50  0001 C CNN
+F 1 "GND" H 4655 1127 50  0000 C CNN
+F 2 "" H 4650 1300 50  0001 C CNN
+F 3 "" H 4650 1300 50  0001 C CNN
+	1    4650 1300
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -2440,10 +2421,10 @@ F 3 "~" H 4850 1450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R17
+L Device:R_Small R12
 U 1 1 605B4230
 P 5200 1450
-F 0 "R17" V 5396 1450 50  0000 C CNN
+F 0 "R12" V 5396 1450 50  0000 C CNN
 F 1 "10K" V 5305 1450 39  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 5200 1450 50  0001 C CNN
 F 3 "~" H 5200 1450 50  0001 C CNN
@@ -2457,7 +2438,7 @@ Wire Wire Line
 Wire Wire Line
 	4650 1550 4650 1600
 Wire Wire Line
-	4650 1350 4650 1250
+	4650 1350 4650 1300
 Wire Wire Line
 	5400 1450 5400 1650
 Text GLabel 5550 1650 2    50   Input ~ 0
@@ -2467,7 +2448,7 @@ Wire Wire Line
 Text Notes 5500 7250 0    50   ~ 0
 All passive smd components are \n0402  unless otherwise stated
 Text Notes 600  1850 0    50   ~ 0
-3.3v linear voltage regulator\npowers all ICs and smd components\nInput from ESC 5v BEC 0603 caps
+3.3v linear voltage regulator\npowers all ICs and smd components\nInput from ESC 5v BEC 0805 caps
 Text Notes 600  4200 0    50   ~ 0
 Internal compass IC
 Text Notes 3050 4150 0    50   ~ 0
@@ -2512,7 +2493,7 @@ F 3 "~" V 2750 1000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text Notes 2550 1850 0    50   ~ 0
-5v regulator for external\nGPS and Compass. Input\nfrom ESC 5v BEC, 0603 C, 0805 F1, D6, FB1
+5v regulator for external\nGPS and Compass. Input\nfrom ESC 5v BEC, 0805 C, 0805 F1, D6, FB1
 $Comp
 L power:+5VD #PWR0138
 U 1 1 5FE43B80
@@ -2544,7 +2525,7 @@ U 1 1 5FE25FE6
 P 4000 1300
 F 0 "C20" H 4092 1338 50  0000 L CNN
 F 1 "10uF" H 4092 1255 39  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4000 1300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4000 1300 50  0001 C CNN
 F 3 "~" H 4000 1300 50  0001 C CNN
 	1    4000 1300
 	1    0    0    -1  
@@ -2602,7 +2583,7 @@ U 1 1 5FE25FEC
 P 3350 1300
 F 0 "C19" H 3442 1338 50  0000 L CNN
 F 1 "10uF" H 3442 1255 39  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3350 1300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3350 1300 50  0001 C CNN
 F 3 "~" H 3350 1300 50  0001 C CNN
 	1    3350 1300
 	1    0    0    -1  
@@ -2693,8 +2674,6 @@ Wire Wire Line
 	8650 5400 9200 5400
 Text GLabel 9100 6000 0    50   Input ~ 0
 SW_s
-Wire Wire Line
-	9150 4600 9200 4600
 NoConn ~ 9200 4700
 NoConn ~ 9200 4800
 Wire Wire Line
@@ -2704,4 +2683,34 @@ Wire Wire Line
 NoConn ~ 10500 4900
 Wire Wire Line
 	9100 6000 9200 6000
+NoConn ~ 9200 4600
+$Comp
+L Device:C_Small C30
+U 1 1 610C7966
+P 4750 950
+F 0 "C30" H 4842 988 50  0000 L CNN
+F 1 "0.1uF" H 4842 905 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4750 950 50  0001 C CNN
+F 3 "~" H 4750 950 50  0001 C CNN
+	1    4750 950 
+	0    -1   -1   0   
+$EndComp
+Wire Notes Line
+	3050 2200 5250 2200
+Wire Notes Line
+	5900 1850 4450 1850
+Wire Wire Line
+	4600 1050 4600 950 
+Wire Wire Line
+	4600 950  4650 950 
+Connection ~ 4600 950 
+Wire Wire Line
+	4600 850  4850 850 
+Wire Wire Line
+	4850 850  4850 950 
+Connection ~ 4600 850 
+Wire Wire Line
+	4600 850  4600 950 
+Wire Wire Line
+	4600 800  4600 850 
 $EndSCHEMATC
