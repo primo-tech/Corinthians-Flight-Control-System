@@ -2715,4 +2715,8 @@ Wire Wire Line
 	4600 800  4600 850 
 Text Notes 9750 1800 0    50   ~ 0
 Resistors and LED 0805
+Wire Wire Line
+	10000 3200 10100 3200
+Connection ~ 10000 3200
+Connection ~ 10100 3200
 $EndSCHEMATC
