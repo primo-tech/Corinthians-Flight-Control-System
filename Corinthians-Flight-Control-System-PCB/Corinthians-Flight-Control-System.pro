@@ -1,4 +1,4 @@
-update=22/08/2021 19:48:15
+update=18/10/2021 22:45:44
 version=1
 last_client=kicad
 [general]
@@ -44,6 +44,7 @@ TrackWidth3=0.32
 TrackWidth4=0.4
 TrackWidth5=0.5
 TrackWidth6=0.8
+TrackWidth7=1.5
 ViaDiameter1=0.62
 ViaDrill1=0.4
 ViaDiameter2=0.62
@@ -82,11 +83,11 @@ Name=F.Cu
 Type=0
 Enabled=1
 [pcbnew/Layer.In1.Cu]
-Name=Power_3.3v.Cu
+Name=Power_GND.Cu
 Type=1
 Enabled=1
 [pcbnew/Layer.In2.Cu]
-Name=Power_GND.Cu
+Name=Power_3.3v.Cu
 Type=1
 Enabled=1
 [pcbnew/Layer.In3.Cu]
