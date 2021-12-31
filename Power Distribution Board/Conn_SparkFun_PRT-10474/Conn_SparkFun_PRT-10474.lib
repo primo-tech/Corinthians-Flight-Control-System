@@ -1,0 +1,33 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# SparkFun PRT-10474
+#
+DEF PRT-10474 J 0 0 Y Y 1 L N
+F0 "J" 0 300 50 H V L CNN 
+F1 "PRT-10474" 0 400 50 H V L CNN 
+F2 "SparkFun-PRT-10474-*" 0 500 50 H I L CNN 
+F3 "http://cdn.sparkfun.com/datasheets/Prototyping/xt60.pdf" 0 600 50 H I L CNN 
+F4 "No" 0 700 50 H I L CNN "automotive"
+F5 "Conn" 0 800 50 H I L CNN "category"
+F6 "Connectors" 0 900 50 H I L CNN "device class L1"
+F7 "Headers and Wire Housings" 0 1000 50 H I L CNN "device class L2"
+F8 "unset" 0 1100 50 H I L CNN "device class L3"
+F9 "XT60 CONNECTORS MALE/FEMALE PAIR" 0 1200 50 H I L CNN "digikey description"
+F10 "1568-1816-ND" 0 1300 50 H I L CNN "digikey part number"
+F11 "Yes" 0 1400 50 H I L CNN "lead free"
+F12 "8e301f0715245e7f" 0 1500 50 H I L CNN "library id"
+F13 "SparkFun" 0 1600 50 H I L CNN "manufacturer"
+F14 "474-PRT-10474" 0 1700 50 H I L CNN "mouser part number"
+F15 "2" 0 1800 50 H I L CNN "number of contacts"
+F16 "1" 0 1900 50 H I L CNN "number of rows"
+F17 "HDR2" 0 2000 50 H I L CNN "package"
+F18 "Yes" 0 2100 50 H I L CNN "rohs"
+DRAW
+S -150 200 50 -200 1 1 0 f
+P 2 1 1 0 150 100 -50 100 N
+P 2 1 1 0 150 -100 -50 -100 N
+ENDDRAW
+ENDDEF
+#
+# End Library
